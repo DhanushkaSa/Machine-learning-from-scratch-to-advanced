@@ -1,0 +1,7 @@
+age,city,score,purchased
+22,Colombo,0.81,1
+35,Kandy,0.44,0
+28,Galle,,1
+41,Colombo,0.67,1
+,Kandy,0.55,0
+33,Galle,0.90,1
