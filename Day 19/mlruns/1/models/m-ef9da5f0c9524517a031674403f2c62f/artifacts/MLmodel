@@ -1,0 +1,23 @@
+artifact_path: file:///c:/Users/User/OneDrive/Documents/CAME Programme/Day 19/mlruns/1/models/m-ef9da5f0c9524517a031674403f2c62f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.16.1
+model_id: m-ef9da5f0c9524517a031674403f2c62f
+model_size_bytes: 9189
+model_uuid: m-ef9da5f0c9524517a031674403f2c62f
+prompts: null
+run_id: c6d7f841d81f4be1ae7c4a79c520a9db
+utc_time_created: '2026-10-18 10:14:51.511189'

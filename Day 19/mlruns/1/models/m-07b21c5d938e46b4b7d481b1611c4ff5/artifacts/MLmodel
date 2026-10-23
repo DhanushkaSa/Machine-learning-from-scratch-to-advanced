@@ -1,0 +1,29 @@
+artifact_path: file:///c:/Users/User/OneDrive/Documents/CAME Programme/Day 19/mlruns/1/models/m-07b21c5d938e46b4b7d481b1611c4ff5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-07b21c5d938e46b4b7d481b1611c4ff5
+model_size_bytes: 780
+model_uuid: m-07b21c5d938e46b4b7d481b1611c4ff5
+prompts: null
+run_id: 9446d1b20e2443b694015f488fa932b3
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 4]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-18 09:46:50.372139'
