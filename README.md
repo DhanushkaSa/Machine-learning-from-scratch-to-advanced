@@ -1,294 +1,124 @@
-# Machine Learning From Scratch to Advanced
+# Machine Learning: From Scratch to Advanced
 
-A structured, hands-on journey through **Machine Learning with Python**, covering programming fundamentals, mathematics, data analysis, model development, practical exercises, and examinations.
+A practical, notebook-first learning journey through Python, data analysis, machine learning, and neural networks. The repository is organized into day-by-day lessons, exercises, datasets, and exam materials, with examples ranging from Python fundamentals to CNNs and experiment tracking.
 
-This repository contains Jupyter Notebooks, Python scripts, datasets, assignments, and study materials developed while progressing from beginner-level concepts toward advanced machine learning.
+> **Current focus:** Learn by running and modifying the notebooks. The contents of each day may vary, and the roadmap grows as new material is added.
 
-## Repository Description
+## Contents
 
-> Complete Machine Learning roadmap with Python, Mathematics, Theory, Code Implementations, Notes, and Projects — from Beginner to Advanced.
+- [Learning roadmap](#learning-roadmap)
+- [Repository structure](#repository-structure)
+- [Getting started](#getting-started)
+- [Recommended workflow](#recommended-workflow)
+- [Tools and libraries](#tools-and-libraries)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Learning Roadmap
+## Learning roadmap
 
-The repository is organized into learning days, practical exercises, and examinations.
+The numbered folders provide a chronological path. Topics below are based on the materials currently present; not every day is a complete lesson or project.
 
-### Day 1 — Python Foundations
+| Folder | Materials and topics |
+| --- | --- |
+| `Day 1`–`Day 4` | Python foundations, programming practice, notebooks, and object-oriented programming exercises |
+| `Day 5`–`Day 8` | Mathematics and vector practice, data handling, and applied coding exercises |
+| `Day 9`–`Day 13` | Customer and other dataset exploration, CSV workflows, regression-oriented exercises, and review data |
+| `Day 14`–`Day 16` | Continued machine-learning practice; includes a breast-cancer XGBoost example, retail customer data, and MLflow-related materials |
+| `Day 17`–`Day 18` | Neural-network concepts and notebook work, including a dense neural-network diagram and a customer prediction model |
+| `Day 19` | XGBoost experiment tracking with MLflow, including a notebook and tracking artifacts |
+| `Day 20` | CNN notebook examples, including `real_cnn.ipynb` |
+| `June Exam` | Python assessment scripts for label auditing, model tagging, review triage, sample checks, and score cleaning |
+| `July Exam` | Python assignment, customer-data cleaning dataset, and notebook assessment |
 
-- Python basics
-- First Python programs
-- Introductory exercises
-- Jupyter Notebook practice
+Some day numbers may be absent or contain only a small amount of material. Check each folder for its current notebooks, scripts, and datasets.
 
-### Day 2 — Python Practice
-
-- Python programming exercises
-- Problem-solving practice
-- Basic programming concepts
-
-### Day 3 — Programming Exercises
-
-- Classwork and homework
-- Python practice problems
-- Reinforcement exercises
-
-### Day 4 — Object-Oriented Programming
-
-- Classes and objects
-- Object-oriented programming concepts
-- Self-study exercises
-- Practice questions
-
-### Day 5 — Mathematics and Vectors
-
-- Vectors
-- Mathematical foundations for machine learning
-- Vector-related exercises
-
-### Day 6 — Data and Python Practice
-
-- Practical coding exercises
-- Data manipulation practice
-- Machine learning preparation
-
-### Day 7 — Applied Exercises
-
-- Classwork and homework
-- Python-based practical exercises
-
-### Day 8 — Continued Practice
-
-- Practical machine learning preparation
-- Classwork and homework exercises
-
-### Day 9 — Customer Data Analysis
-
-- Customer datasets
-- Data exploration
-- Data preparation
-- Working with CSV files
-- Introductory customer segmentation exercises
-
-### Day 10 — Classes and Practical Work
-
-- Python classes
-- Object-oriented programming practice
-- Notebook-based exercises
-
-### Day 12 — Regression and Exploratory Analysis
-
-- Advertising dataset
-- Home-related dataset
-- Regression-oriented exercises
-- Data analysis using Python
-
-### Day 13 — Data Analysis and Review Classification
-
-- Advertising dataset
-- Women's clothing ecommerce reviews
-- Review-related data exploration
-- Practical machine learning exercises
-
-## Examinations
-
-The repository also includes examination and assessment materials.
-
-### June Examination
-
-Includes Python scripts for:
-
-- Label auditing
-- Model tagging
-- Review triage
-- Sample validation
-- Score cleaning
-
-### July Examination
-
-Includes:
-
-- Python assignments
-- Customer data cleaning
-- Data quality exercises
-- Practical Jupyter Notebook assessment
-
-## Technologies Used
-
-- Python
-- Jupyter Notebook
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- CSV datasets
-- Object-oriented programming
-
-> Some libraries may be introduced progressively throughout the roadmap.
-
-## Repository Structure
+## Repository structure
 
 ```text
 Machine-learning-from-scratch-to-advanced/
-│
-├── Day 1/
-├── Day 2/
-├── Day 3/
-├── Day 4/
-├── Day 5/
-├── Day 6/
-├── Day 7/
-├── Day 8/
-├── Day 9/
-├── Day 10/
-├── Day 12/
-├── Day 13/
-│
+├── Day 1/ ... Day 10/
+├── Day 12/ ... Day 20/
 ├── June Exam/
-└── July Exam/
+├── July Exam/
+└── README.md
 ```
 
-Each day contains a combination of:
+A day folder may contain Jupyter notebooks (`.ipynb`), Python scripts (`.py`), CSV datasets, model files, diagrams, or experiment-tracking artifacts. Not all folders have the same structure.
 
-- Jupyter Notebooks
-- Python scripts
-- CSV datasets
-- Classwork
-- Homework
-- Self-study exercises
-- Practical assignments
+## Getting started
 
-## Getting Started
-
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/DhanushkaSa/Machine-learning-from-scratch-to-advanced.git
 cd Machine-learning-from-scratch-to-advanced
 ```
 
-### 2. Create a Virtual Environment
+### 2. Create and activate a virtual environment (recommended)
 
-#### Windows
+**Windows (PowerShell):**
 
-```bash
-python -m venv venv
-venv\Scripts\activate
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
 ```
 
-#### macOS/Linux
+**macOS/Linux:**
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-### 3. Install the Required Libraries
+### 3. Install notebook and common data-science packages
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+python -m pip install --upgrade pip
+python -m pip install jupyter numpy pandas matplotlib seaborn scikit-learn
 ```
 
-### 4. Start Jupyter Notebook
+Some notebooks use additional packages, such as PyTorch, XGBoost, or MLflow. Install the package required by the specific notebook you plan to run. For PyTorch, use the installation instructions appropriate for your operating system and hardware at [pytorch.org](https://pytorch.org/get-started/locally/).
+
+### 4. Launch Jupyter
 
 ```bash
 jupyter notebook
 ```
 
-Open a `Day` directory and select a notebook to begin learning.
+Open a notebook from the relevant `Day` folder. Run it from that folder when the notebook reads local files using relative paths. If a notebook reports a missing package, install that notebook's dependency in the active environment and restart the kernel.
 
-## Recommended Learning Path
+## Recommended workflow
 
-Follow the repository in order:
+1. Start with the earliest available day and work forward.
+2. Read each notebook's explanations and run the cells in order.
+3. Try changing inputs and parameters to see how results change.
+4. Keep data files alongside the notebook when it expects relative paths.
+5. Complete practice and exam materials after working through the related concepts.
+6. Record package requirements and any setup notes for notebooks that need extra dependencies.
 
-1. Python fundamentals
-2. Python problem-solving exercises
-3. Object-oriented programming
-4. Mathematics for machine learning
-5. Vectors and numerical concepts
-6. Data analysis with Pandas
-7. Data visualization
-8. CSV and dataset handling
-9. Regression fundamentals
-10. Practical machine learning exercises
-11. Assignments and examinations
-12. Independent projects and advanced topics
+## Tools and libraries
 
-## Datasets Included
+The repository is primarily made up of Jupyter notebooks, with Python scripts and data files. Depending on the lesson, you may encounter:
 
-The repository currently includes datasets such as:
+- Python and Jupyter
+- NumPy and Pandas
+- Matplotlib and Seaborn
+- scikit-learn
+- PyTorch
+- XGBoost
+- MLflow
+- CSV datasets and model artifacts
 
-- Advertising data
-- Customer data
-- Home-related data
-- Women's clothing ecommerce reviews
-- Customer cleaning and examination datasets
+The exact dependencies vary by notebook; there is not currently a single repository-wide dependency file.
 
-These datasets are used for data exploration, preprocessing, analysis, and practical machine learning exercises.
+## Contributing
 
-## Learning Goals
-
-By completing this roadmap, you will develop skills in:
-
-- Python programming
-- Object-oriented programming
-- Mathematical thinking for machine learning
-- Data cleaning and preprocessing
-- Exploratory data analysis
-- Data visualization
-- Working with CSV datasets
-- Regression concepts
-- Text and review data analysis
-- Machine learning workflow design
-- Writing reusable Python code
-- Solving practical data problems
-
-## How to Use This Repository
-
-1. Start with `Day 1`.
-2. Complete the notebooks in sequence.
-3. Read the explanations inside each notebook.
-4. Run every code cell yourself.
-5. Modify examples and experiment with the datasets.
-6. Complete the homework and self-study notebooks.
-7. Review the examination folders after completing the relevant topics.
-8. Add your own notes, solutions, and projects as your knowledge improves.
-
-## Important Notes
-
-- The repository is primarily notebook-based.
-- Some days may contain practical exercises rather than complete end-to-end projects.
-- Run notebooks from their corresponding directories so that relative dataset paths work correctly.
-- The learning roadmap may continue to grow as new topics and projects are added.
-
-## Future Topics
-
-Planned or potential future additions include:
-
-- NumPy and Pandas in greater depth
-- Data visualization
-- Statistics for machine learning
-- Probability
-- Linear and logistic regression
-- Classification algorithms
-- Decision trees and ensemble methods
-- Clustering
-- Dimensionality reduction
-- Feature engineering
-- Model evaluation
-- Hyperparameter tuning
-- Neural networks
-- Deep learning
-- Natural language processing
-- End-to-end machine learning projects
+Suggestions, corrections, and learning materials are welcome. Open an issue to describe a problem or proposed improvement, or submit a pull request with a clear summary of your changes. Please keep new content organized in the relevant day folder and include any required setup instructions.
 
 ## Author
 
-Created and maintained by **DhanushkaSa**.
-
-GitHub: [@DhanushkaSa](https://github.com/DhanushkaSa)
+Created and maintained by [DhanushkaSa](https://github.com/DhanushkaSa).
 
 ## License
 
-No license has currently been specified for this repository.
-
-If you plan to make the repository public or allow others to reuse the code, consider adding an appropriate open-source license.
+No license is currently specified. Unless a license is added, reuse and redistribution of this repository's contents may be restricted by default copyright law.
